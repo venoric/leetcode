@@ -3,11 +3,12 @@
 from collections import defaultdict
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # 
         anagram_map = defaultdict(list)
         result = []
         for s in strs:
             # sort by alphabetical order
-            # doing this, regardless of the word it will be the same
+            # doing this, regardless of the word it will be the same pattern
             # because keys are immutable, we have to make it so by using tuple
             # example for bat 
             # strs = [bat,hello,yes]
